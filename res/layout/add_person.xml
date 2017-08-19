@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:id="@+id/personimageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/personNamea_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/personimageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/personNameView"
+            android:layout_gravity="right"
+            android:background="#566d6b70"
+            android:editable="true"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/budgeta_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/budgetView"
+            android:layout_toEndOf="@+id/budgetView"
+            android:layout_toRightOf="@+id/budgetView"
+            android:background="#566d6b70"
+            android:editable="true"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/groupNamea_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/groupView"
+            android:layout_toEndOf="@+id/personNameView"
+            android:layout_toRightOf="@+id/budgetView"
+            android:background="@android:drawable/btn_dropdown"
+            android:popupBackground="#ff6d6b70" />
+
+        <TextView
+            android:id="@+id/personNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="70dp"
+            android:layout_toStartOf="@+id/personNamea_d"
+            android:gravity="left"
+            android:text="Person Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/budgetView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/personNamea_d"
+            android:layout_marginTop="56dp"
+            android:layout_toLeftOf="@+id/personimageView"
+            android:layout_toStartOf="@+id/personNamea_d"
+            android:gravity="left"
+            android:text="Budget"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/groupView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/budgeta_d"
+            android:layout_marginTop="56dp"
+            android:layout_toStartOf="@+id/groupNamea_d"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text="Group Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/imageSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right|center_horizontal"
+            android:onClick="onSelect"
+            android:text="Img" />
+    </RelativeLayout>
+</LinearLayout>

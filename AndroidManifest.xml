@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Gifts"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="MyActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddGift"
+            android:label="Add Gift"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Group" />
+        <activity
+            android:name=".Group"
+            android:label="Group"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MyActivity" />
+        <activity
+            android:name=".AddPerson"
+            android:label="Add Person"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MyActivity" />
+        <activity
+            android:name=".AddPerson1"
+            android:label="Add Person"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MyActivity" />
+        <activity
+            android:name=".AddGroup"
+            android:label="Add Group"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MyActivity" />
+        <activity
+            android:name=".AddStore"
+            android:label="Add Store"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MyActivity" />
+        <activity
+            android:name=".Gift_Show"
+            android:label="Gift Show"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Group"></activity>
+        <activity
+            android:name=".Store_Tab.StoreDetails"
+            android:label="Store Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Group" />
+        <activity
+            android:name=".Progress_Tab.Progress_view"
+            android:label="Progress view"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Group" />
+        <activity
+            android:name=".Group_Update"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Group" />
+        <activity
+            android:name=".Gallery"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AddPerson" />
+    </application>
+</manifest>

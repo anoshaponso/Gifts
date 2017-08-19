@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/personNamep_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_dark" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/giftNamegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow"
+            android:layout_marginTop="56dp"
+            android:text="Gift Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/gift_namea_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/giftNamegi"
+            android:layout_alignTop="@+id/giftNamegi"
+            android:layout_toLeftOf="@+id/gifts"
+            android:layout_toRightOf="@+id/giftNamegi"
+            android:background="#566d6b70"
+            android:enabled="true"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/giftPricea_g"
+            android:layout_alignStart="@+id/budgetp_v"
+            android:layout_marginTop="56dp"
+            android:text="Price"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/giftPricea_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gift_namea_g"
+            android:layout_marginTop="41dp"
+            android:layout_toRightOf="@+id/giftNamegi"
+            android:background="#566d6b70"
+            android:editable="true"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/budgetp_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/giftPricea_g"
+            android:layout_marginTop="56dp"
+            android:text="Strore"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/giftAmountValuegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/storea_g"
+            android:layout_marginTop="41dp"
+            android:text="Status"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/gift_statusa_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/storea_g"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/giftAmountValuegi"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="right"
+            android:popupBackground="#926D6B70" />
+
+        <Spinner
+            android:id="@+id/storea_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/budgetp_v"
+            android:layout_toRightOf="@+id/giftNamegi"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="right"
+            android:popupBackground="#ff6d6b70" />
+
+        <Spinner
+            android:id="@+id/gifts"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/giftPricea_g"
+            android:layout_alignTop="@+id/gift_namea_g"
+            android:background="@android:drawable/btn_dropdown"
+            android:popupBackground="#ff6d6b70"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+</LinearLayout>

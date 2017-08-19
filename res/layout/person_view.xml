@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/personImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/personNamep_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/personImage"
+                    android:layout_toRightOf="@+id/personImage"
+                    android:background="@android:color/background_light"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/budgetp_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/spentp_v"
+                    android:background="@android:color/background_light"
+                    android:gravity="right"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/spentp_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar"
+                    android:layout_toEndOf="@+id/personImage"
+                    android:layout_toRightOf="@+id/personImage"
+                    android:background="@android:color/background_light"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/background_dark" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/budgetp_v"
+                    android:layout_below="@+id/personNamep_v1"
+                    android:layout_toEndOf="@+id/personImage"
+                    android:layout_toRightOf="@+id/personImage"
+                    android:background="@android:color/background_dark"
+                    android:indeterminate="false" />
+            </RelativeLayout>
+        </TableRow>
+
+        <requestFocus
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="83dp" />
+
+        <requestFocus
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="139dp" />
+
+        <requestFocus
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <requestFocus
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

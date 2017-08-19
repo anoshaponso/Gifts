@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_accept"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Add"
+
+        />android:icon="@drawable/accept"
+    <item
+        android:id="@+id/contacts"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="con"
+
+        />
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:id="@+id/storeImagea_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="94dp"></TableRow>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/giftNamegi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/storeNamea_s"
+                android:text="Store"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/storeNamea_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:autoText="false"
+                android:background="#566d6b70"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
